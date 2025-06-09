@@ -3,6 +3,7 @@ import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 import Link from "next/link"
 import ServerInfo from "../ServerInfo/ServerInfo"
 
+export const dynamic = 'force-dynamic';
 export default function CardProfile() {
     return (
         <div className="w-full h-full flex flex-col md:flex-row">
@@ -35,7 +36,7 @@ export default function CardProfile() {
                                 <FaLinkedin className="text-[18px] md:text-[2rem]  text-orange-500 inline-block"/>
                                 <Link href="https://www.linkedin.com/in/erik-andres/"
                                     target="_blank"
-                                    className="text-[1.1rem] md:text-[1.4rem] inline-block ml-4">
+                                    className="text-[0.8rem] md:text-[1.4rem] inline-block ml-4">
                                     Erik Carcelén
                                 </Link>
                             </li>
@@ -43,14 +44,14 @@ export default function CardProfile() {
                                 <FaGithub className="text-[18px] md:text-[2rem] text-orange-500 inline-block"/>
                                 <Link href="https://github.com/erikanndres"
                                     target="_blank"
-                                    className="text-[1.1rem] md:text-[1.4rem] inline-block ml-4">
+                                    className="text-[0.8rem] md:text-[1.4rem] inline-block ml-4">
                                     @erikanndres
                                 </Link>
                             </li>
                             <li className="h-[40px] flex items-center mt-6">
                                 <FaEnvelope className="text-[18px] md:text-[2rem] text-orange-500 inline-block"/>
                                 <Link href="mailto:erik.carcelen@ister.edu.ec"
-                                    className="text-[0.9rem] md:text-[1.4rem] inline-block ml-4"
+                                    className="text-[0.8rem] md:text-[1.4rem] inline-block ml-4"
                                     target="_blank">
                                     erik.carcelen@ister.edu.ec
                                 </Link>
@@ -58,7 +59,8 @@ export default function CardProfile() {
                         </ul>
                     </div>
                     <div className="serverinfo w-[80%] mx-auto text-center
-                    p-5 rounded-lg mt-[80px] bg-[#ffa50066]">
+                    p-5 rounded-lg mt-[80px] bg-[#ffa50066]
+                    ">
                         <ServerInfo/>
                     </div>
                 </div>
