@@ -3,7 +3,6 @@ import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 import Link from "next/link"
 import ServerInfo from "../ServerInfo/ServerInfo"
 
-export const dynamic = 'force-dynamic';
 export default function CardProfile() {
     return (
         <div className="w-full h-full flex flex-col md:flex-row">

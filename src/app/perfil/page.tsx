@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 import CardProfile from "@/components/Card/ProfileCard";
 
 export const metadata = {
